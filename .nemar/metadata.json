@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "A dataset recorded during development of an affective brain-computer music interface: testing session",
-  "description": "This dataset contains EEG recordings from 8 healthy adult participants during real-time control of an affective brain-computer music interface (BCMI). Participants listened to 60-second music clips designed to induce specific emotional states defined by valence and arousal dimensions. The dataset includes continuous EEG data sampled at 1 kHz alongside self-reported affective state ratings, enabling investigation of neural correlates of emotion and the efficacy of real-time music-based emotion induction. This dataset is part of a three-dataset collection investigating brain-computer music interface performance; participant codes are consistent across all three datasets.",
-  "methods_description": "EEG data were recorded from 8 healthy adult participants at a sampling rate of 1 kHz during listening to 60-second synthetic music clips. Each clip was structured to target specific affective states: the first 20 seconds targeted an initial emotional state (A), followed by 20 seconds where the BCMI attempted to detect the participant's actual affective state and generate music to move them toward a second target emotional state (B), and a final 20 seconds targeting the affective trajectory from state B to a third emotional state (C). Participants provided self-reported valence and arousal ratings for each trial. The synthetic music generator used in this study was based on the affective calibration system described in Williams et al. (2017).",
+  "description": "This dataset contains EEG recordings from 8 healthy adult participants during real-time control of an affective brain-computer music interface (BCMI). Participants listened to 60-second music clips designed to induce specific emotional states defined by valence and arousal dimensions. The dataset includes continuous EEG data sampled at 1 kHz alongside self-reported affective state ratings, enabling investigation of neural correlates of emotion and the efficacy of real-time music-based emotional state modulation.",
+  "methods_description": "EEG data were recorded at 1 kHz sampling rate from 8 participants during a music listening task. Each trial consisted of a 60-second music clip: the first 20 seconds targeted an initial affective state (target A), followed by 20 seconds during which the BCMI system identified the participant's current affective state and generated music to transition toward a second target state (target B), with the final 20 seconds targeting the second affective state. Participants provided subjective ratings of valence and arousal following each clip.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -33,37 +33,16 @@
       "term": "emotion recognition"
     },
     {
-      "term": "emotion detection"
-    },
-    {
-      "term": "emotion induction"
+      "term": "affective computing"
     },
     {
       "term": "music therapy"
-    },
-    {
-      "term": "affective computing"
     },
     {
       "term": "valence"
     },
     {
       "term": "arousal"
-    },
-    {
-      "term": "music"
-    },
-    {
-      "term": "synthetic music"
-    },
-    {
-      "term": "real-time"
-    },
-    {
-      "term": "online BCI"
-    },
-    {
-      "term": "real-time BCI"
     }
   ],
   "related_identifiers": [
