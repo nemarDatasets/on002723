@@ -1,33 +1,133 @@
 {
   "version": "2.0",
-  "dataset_id": "on002723",
-  "source": "openneuro",
-  "source_id": "ds002723",
+  "pipeline_stage": "enriched",
   "title": "A dataset recorded during development of an affective brain-computer music interface: testing session",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Ian Daly": {},
     "Nicoletta Nicolaou": {},
-    "Duncan Williams": {},
+    "Duncan Williams": {
+      "orcid": "0000-0003-4793-8330",
+      "affiliations": [
+        {
+          "name": "Plymouth University, Plymouth, Devon, UK"
+        }
+      ]
+    },
     "Faustina Hwang": {},
     "Alexis Kirke": {},
     "Eduardo Miranda": {},
     "Slawomir J. Nasuto": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds002723.v1.1.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on002723",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on002723",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1145/3059005",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/sdata.2018.203",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1088/1741-2560/13/4/046022",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.0.2",
-  "recording_modality": [
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".gitattributes",
+    ".json",
+    ".m",
+    ".md",
+    ".mid",
+    ".mxf",
+    ".pdf",
+    ".tsv"
+  ],
+  "description": "This dataset contains EEG recordings from 8 healthy adult participants during real-time control of an affective brain-computer music interface (BCMI). Participants listened to 60-second music clips designed to induce specific emotional states defined by valence and arousal dimensions. Each 60-second clip consisted of three 20-second segments: an initial segment targeting emotional state A, a middle segment where the brain-computer interface identified the participant's actual affective state and generated music to transition toward target state B, and a final segment targeting state B. The dataset includes continuous EEG data sampled at 1 kHz alongside self-reported affective state ratings (valence and arousal), enabling investigation of neural correlates of emotion and the efficacy of real-time music-based neurofeedback for emotional state modulation.",
+  "methods_description": "EEG data were recorded at 1 kHz sampling rate from 8 healthy adult participants during listening to 60-second synthetic music clips. Each clip consisted of three 20-second segments: an initial segment targeting emotional state A, a middle segment where the brain-computer interface identified the participant's actual affective state and generated music to transition toward target state B, and a final segment targeting state B. Participants provided self-reported valence and arousal ratings for each clip. The synthetic music generator used to generate the music clips was presented in Williams et al. (2017).",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "emotion recognition"
+    },
+    {
+      "term": "music therapy"
+    },
+    {
+      "term": "affective computing"
+    },
+    {
+      "term": "neurofeedback"
+    },
+    {
+      "term": "music"
+    },
+    {
+      "term": "emotion induction"
+    },
+    {
+      "term": "real-time"
+    },
+    {
+      "term": "synthetic music"
+    },
+    {
+      "term": "valence"
+    },
+    {
+      "term": "arousal"
+    },
+    {
+      "term": "valence-arousal model"
+    },
+    {
+      "term": "affective brain-computer music interface"
+    },
+    {
+      "term": "self-report"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "Engineering and Physical Sciences Research Council",
+      "award_number": "EP/J003077/1"
+    },
+    {
+      "funder_name": "Engineering and Physical Sciences Research Council",
+      "award_number": "EP/J002135/1"
+    }
+  ],
+  "source_hash": "fa168423633188f91a2699ac6f0681dc950c41184fe44987ba1887c38bd2a151"
 }
