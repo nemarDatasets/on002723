@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "A dataset recorded during development of an affective brain-computer music interface: testing session",
-  "description": "This dataset contains EEG recordings from 8 healthy adult participants during real-time control of an affective brain-computer music interface (BCMI). Participants listened to 60-second music clips designed to induce specific emotional states defined by valence and arousal dimensions. The dataset includes continuous EEG data sampled at 1 kHz alongside self-reported affective state ratings, enabling investigation of neural correlates of emotion and the efficacy of real-time music-based emotional state modulation.",
-  "methods_description": "EEG data were recorded at 1 kHz sampling rate from 8 participants during a music listening task. Each trial consisted of a 60-second music clip: the first 20 seconds targeted an initial affective state (target A), followed by 20 seconds during which the BCMI system identified the participant's current affective state and generated music to transition toward a second target state (target B), with the final 20 seconds targeting the second affective state. Participants provided subjective ratings of valence and arousal following each clip.",
+  "description": "EEG recordings from 8 healthy adults using a real-time, online affective music brain-computer interface. The system identified each listener's emotional state and modified synthetically generated 60 s music clips on the fly to induce target affective states defined by valence and arousal. The dataset includes self-reported valence and arousal and is one of three connected datasets from the BCMI-MIdAS project.",
+  "methods_description": "Participants listened to 60 s synthetic music clips while EEG was recorded at 1 kHz. The first 20 s targeted one affective state (A). In the remaining 40 s the BCMI estimated the participant's current affective state and generated music to move them toward a second target state (B). Participants reported valence and arousal.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -30,19 +30,25 @@
       "term": "brain-computer interface"
     },
     {
-      "term": "emotion recognition"
+      "term": "Music",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D009146"
     },
     {
-      "term": "affective computing"
+      "term": "Emotions",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004644"
     },
     {
-      "term": "music therapy"
+      "term": "affective state"
     },
     {
-      "term": "valence"
+      "term": "valence and arousal"
     },
     {
-      "term": "arousal"
+      "term": "real-time neurofeedback"
     }
   ],
   "related_identifiers": [
@@ -52,29 +58,24 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on002723",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.1145/3059005",
       "identifier_type": "DOI",
       "relation_type": "References"
     },
     {
-      "identifier": "10.1038/sdata.2018.203",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.1088/1741-2560/13/4/046022",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.18112/openneuro.ds002723.v1.1.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on002723",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -92,7 +93,7 @@
     "eeg"
   ],
   "sizes": [
-    "2.8 GB (49 files)"
+    "2.60 GB (49 files)"
   ],
   "formats": [
     ".edf",
